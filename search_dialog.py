@@ -25,10 +25,8 @@ class SearchDialog(QDialog):
 
     def search(self):
         material_id = self.material_id.text().upper()
-        conn = self.main_window.db.connect()
-        cursor = conn.cursor()
-        result = cursor.execute("SELECT * FROM materials WHERE material_id = ?", (material_id,))
-
+        sql = f"SELECT * FROM materials WHERE material_id = '{material_id}'"
+        result = self.main_window.db.query(sql)
         rows = list(result)
         items = self.main_window.table.findItems(material_id, Qt.MatchFlag.MatchFixedString)
         self.close()

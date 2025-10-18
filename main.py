@@ -3,18 +3,42 @@ import pandas as pd
 from PyQt6.QtCore import Qt, QSize
 from PyQt6.QtWidgets import QApplication, QLabel, QMainWindow, QToolBar, QTableWidget, QTableWidgetItem, QComboBox
 from PyQt6.QtGui import QAction, QIcon, QPixmap
-import sqlite3
+from abc import ABC, abstractmethod
 
 from search_dialog import SearchDialog
 from about_dialog import AboutDialog
 
-class DatabaseConnection:
+class AbstractDatabaseConnection(ABC):
+    @abstractmethod
+    def connect(self):
+        pass
+
+    @abstractmethod
+    def query(self, sql: str):
+        pass
+
+
+class SqliteConnection(AbstractDatabaseConnection):
     def __init__(self, database_file="database.db"):
         self.database_file = database_file
 
     def connect(self):
-        connection = sqlite3.connect(self.database_file)
-        return connection
+        import sqlite3
+        return sqlite3.connect(self.database_file)
+
+    def query(self, sql: str):
+        conn = self.connect()
+        cursor = conn.cursor()
+        try:
+            cursor.execute(sql)
+            if sql.strip().lower().startswith("select"):  # process select query
+                data = cursor.fetchall()
+                return data
+            else:  # proceed DML
+                conn.commit()
+                return cursor.rowcount
+        finally:
+            conn.close()
 
     def init_material(self, csv_file = "semiconductor_materials_200.csv"):
         table_name = "materials"
@@ -24,11 +48,11 @@ class DatabaseConnection:
 
 
 class MainWindow(QMainWindow):
-    def __init__(self):
+    def __init__(self, db: AbstractDatabaseConnection):
         super().__init__()
         self.setWindowTitle("Material management system")
         self.setMinimumSize(1280, 960)
-        self.db = DatabaseConnection()
+        self.db = db
 
         file_menu_item = self.menuBar().addMenu("&File")
         edit_menu_item = self.menuBar().addMenu("&Edit")
@@ -71,14 +95,12 @@ class MainWindow(QMainWindow):
         dialog.exec()
 
     def load_data(self, sql="SELECT * FROM materials"):
-        conn = self.db.connect()
-        result = conn.execute(sql)
+        result = self.db.query(sql)
         self.table.setRowCount(0)
         for row_number, row_data in enumerate(result):
             self.table.insertRow(row_number)
             for column_number, data in enumerate(row_data):
                 self.table.setItem(row_number, column_number, QTableWidgetItem(str(data)))
-        conn.close()
 
     def search_material(self):
         dialog = SearchDialog(self)
@@ -91,12 +113,9 @@ class MainWindow(QMainWindow):
         else:
             main_window.load_data()
 
-
     @property
     def material_category_list(self):
-        conn = self.db.connect()
-        cursor = conn.cursor()
-        result = cursor.execute("SELECT DISTINCT category FROM materials")
+        result = self.db.query("SELECT DISTINCT category FROM materials")
         print(result)
         category_list = list(map(lambda x: x[0].strip(), result))
         return category_list
@@ -112,7 +131,8 @@ class MainWindow(QMainWindow):
 
 
 app = QApplication(sys.argv)
-main_window = MainWindow()
+database = SqliteConnection()
+main_window = MainWindow(db=database)
 main_window.show()
 main_window.load_data()
 sys.exit(app.exec())
