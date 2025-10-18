@@ -1,12 +1,12 @@
 import sys
 import pandas as pd
-from PyQt6.QtCore import Qt
-from PyQt6.QtWidgets import QApplication, QLabel, QLineEdit, QGridLayout, QPushButton, \
-    QMainWindow, QToolBar, QTableWidget, QTableWidgetItem, QDialog, QMessageBox
-from PyQt6.QtGui import QAction, QIcon
+from PyQt6.QtCore import Qt, QSize
+from PyQt6.QtWidgets import QApplication, QLabel, QMainWindow, QToolBar, QTableWidget, QTableWidgetItem, QComboBox
+from PyQt6.QtGui import QAction, QIcon, QPixmap
 import sqlite3
 
 from search_dialog import SearchDialog
+from about_dialog import AboutDialog
 
 class DatabaseConnection:
     def __init__(self, database_file="database.db"):
@@ -38,20 +38,41 @@ class MainWindow(QMainWindow):
         search_action.triggered.connect(self.search_material)
         edit_menu_item.addAction(search_action)
 
+        about_action = QAction("About", self)
+        help_menu_item.addAction(about_action)
+        about_action.setMenuRole(QAction.MenuRole.NoRole)
+        about_action.triggered.connect(self.about)
+
+        toolbar = QToolBar()
+        toolbar.setIconSize(QSize(24, 24))
+        toolbar.setMovable(True)
+        self.addToolBar(toolbar)
+
+        filter_icon_pixmap = QPixmap('icons/filter.png').scaled(toolbar.iconSize(), Qt.AspectRatioMode.KeepAspectRatio,
+                                                                Qt.TransformationMode.SmoothTransformation)
+        filter_label = QLabel()
+        filter_label.setPixmap(filter_icon_pixmap)
+        filter_combo = QComboBox()
+        filter_combo.addItems(['- Choose category -'] + self.material_category_list)
+        filter_combo.currentTextChanged.connect(self.on_filter_combo_change)
+
         self.table = QTableWidget()
         self.table.setColumnCount(12)
         print(self.table_headers)
         self.table.setHorizontalHeaderLabels(self.table_headers)
         self.setCentralWidget(self.table)
 
-        toolbar = QToolBar()
-        toolbar.setMovable(True)
-        self.addToolBar(toolbar)
         toolbar.addAction(search_action)
+        toolbar.addWidget(filter_label)
+        toolbar.addWidget(filter_combo)
 
-    def load_data(self):
+    def about(self):
+        dialog = AboutDialog()
+        dialog.exec()
+
+    def load_data(self, sql="SELECT * FROM materials"):
         conn = self.db.connect()
-        result = conn.execute("SELECT * FROM materials")
+        result = conn.execute(sql)
         self.table.setRowCount(0)
         for row_number, row_data in enumerate(result):
             self.table.insertRow(row_number)
@@ -63,6 +84,23 @@ class MainWindow(QMainWindow):
         dialog = SearchDialog(self)
         dialog.exec()
 
+    def on_filter_combo_change(self, text):
+        if text != '- Choose category -':
+            sql = "SELECT * FROM materials WHERE category = '" + text + "'"
+            main_window.load_data(sql=sql)
+        else:
+            main_window.load_data()
+
+
+    @property
+    def material_category_list(self):
+        conn = self.db.connect()
+        cursor = conn.cursor()
+        result = cursor.execute("SELECT DISTINCT category FROM materials")
+        print(result)
+        category_list = list(map(lambda x: x[0].strip(), result))
+        return category_list
+
     @property
     def table_headers(self):
         headers = "material_id, material_name, category, supplier, unit, unit_cost_usd, usage_process, \
@@ -71,8 +109,6 @@ class MainWindow(QMainWindow):
         for item in headers:
             table_headers.append(item.capitalize().replace("_", " "))
         return table_headers
-
-
 
 
 app = QApplication(sys.argv)
