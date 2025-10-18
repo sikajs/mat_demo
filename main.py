@@ -3,7 +3,8 @@ import pandas as pd
 
 from PyQt6.QtCore import Qt
 from PyQt6.QtWidgets import QApplication, QLabel, QLineEdit, QGridLayout, QPushButton, \
-    QMainWindow, QToolBar, QTableWidget, QTableWidgetItem
+    QMainWindow, QToolBar, QTableWidget, QTableWidgetItem, QDialog, QVBoxLayout, QMessageBox
+from PyQt6.QtGui import QAction, QIcon
 import sqlite3
 
 class DatabaseConnection:
@@ -31,11 +32,20 @@ class MainWindow(QMainWindow):
         edit_menu_item = self.menuBar().addMenu("&Edit")
         help_menu_item = self.menuBar().addMenu("&Help")
 
+        search_action = QAction(QIcon("icons/search.png"), "Search", self)
+        search_action.triggered.connect(self.search_material)
+        edit_menu_item.addAction(search_action)
+
         self.table = QTableWidget()
         self.table.setColumnCount(12)
         print(self.table_headers)
         self.table.setHorizontalHeaderLabels(self.table_headers)
         self.setCentralWidget(self.table)
+
+        toolbar = QToolBar()
+        toolbar.setMovable(True)
+        self.addToolBar(toolbar)
+        toolbar.addAction(search_action)
 
     def load_data(self):
         conn = DatabaseConnection().connect()
@@ -47,6 +57,10 @@ class MainWindow(QMainWindow):
                 self.table.setItem(row_number, column_number, QTableWidgetItem(str(data)))
         conn.close()
 
+    def search_material(self):
+        dialog = SearchDialog()
+        dialog.exec()
+
     @property
     def table_headers(self):
         headers = "material_id, material_name, category, supplier, unit, unit_cost_usd, usage_process, \
@@ -55,6 +69,46 @@ class MainWindow(QMainWindow):
         for item in headers:
             table_headers.append(item.capitalize().replace("_", " "))
         return table_headers
+
+class SearchDialog(QDialog):
+    def __init__(self):
+        super().__init__()
+        # setup search window
+        self.setWindowTitle("Search materials")
+        self.setFixedWidth(300)
+        self.setFixedHeight(300)
+
+        layout = QVBoxLayout()
+
+        self.material_id = QLineEdit()
+        self.material_id.setPlaceholderText("Material id")
+        layout.addWidget(self.material_id)
+
+        button = QPushButton("Search")
+        button.clicked.connect(self.search)
+        layout.addWidget(button)
+
+        self.setLayout(layout)
+
+    def search(self):
+        material_id = self.material_id.text().upper()
+        conn = DatabaseConnection().connect()
+        cursor = conn.cursor()
+        result = cursor.execute("SELECT * FROM materials WHERE material_id = ?", (material_id,))
+
+        rows = list(result)
+        items = main_window.table.findItems(material_id, Qt.MatchFlag.MatchFixedString)
+        if len(items) > 0:
+            for item in items:
+                main_window.table.selectRow(item.row())
+            self.close()
+        else:
+            print('not found')
+            self.close()
+            message = QMessageBox()
+            message.setWindowTitle("Error")
+            message.setText(f"Cannot find material with id {material_id}" )
+            message.exec()
 
 
 app = QApplication(sys.argv)
