@@ -3,82 +3,17 @@ import pandas as pd
 from PyQt6.QtCore import Qt, QSize
 from PyQt6.QtWidgets import QApplication, QLabel, QMainWindow, QToolBar, QTableWidget, QTableWidgetItem, QComboBox
 from PyQt6.QtGui import QAction, QIcon, QPixmap
-from abc import ABC, abstractmethod
+
 
 from search_dialog import SearchDialog
 from about_dialog import AboutDialog
 
-class AbstractDatabaseConnection(ABC):
-    @abstractmethod
-    def connect(self):
-        pass
-
-    @abstractmethod
-    def query(self, sql: str):
-        pass
-
-class PostgresqlConnection(AbstractDatabaseConnection):
-    def __init__(self, user: str, password: str, host="localhost", dbname="demo_development"):
-        from sqlalchemy import create_engine
-        conn_str = "postgresql+psycopg2://{user}:{password}@{host}:5432/{dbname}".format(
-                        user=user, password=password, host=host, dbname=dbname)
-        self.engine = create_engine(conn_str)
-
-    def connect(self):
-        return self.engine.connect()
-
-    def query(self, sql: str):
-        from sqlalchemy import text
-        try:
-            with self.connect() as conn:
-                result = conn.execute(text(sql))
-                if sql.lstrip().lower().startswith("select"):  # process select query
-                    data = result.fetchall()
-                    return data
-                else:  # proceed DML
-                    conn.commit()
-                    return result.rowcount
-        except Exception as e:
-            print(e)
-
-    def init_material(self, csv_file = "semiconductor_materials_400.csv"):
-        table_name = "materials"
-        df = pd.read_csv(csv_file)
-        print(df)
-        df.to_sql(table_name, con=self.engine, if_exists='replace', index=False)
-
-
-class SqliteConnection(AbstractDatabaseConnection):
-    def __init__(self, database_file="database.db"):
-        self.database_file = database_file
-
-    def connect(self):
-        import sqlite3
-        return sqlite3.connect(self.database_file)
-
-    def query(self, sql: str):
-        conn = self.connect()
-        cursor = conn.cursor()
-        try:
-            cursor.execute(sql)
-            if sql.strip().lower().startswith("select"):  # process select query
-                data = cursor.fetchall()  # 不適合大量資料，一次全部進記憶體
-                return data
-            else:  # proceed DML
-                conn.commit()
-                return cursor.rowcount
-        finally:
-            conn.close()
-
-    def init_material(self, csv_file = "semiconductor_materials_400.csv"):
-        table_name = "materials"
-        df = pd.read_csv(csv_file)
-        print(df)
-        df.to_sql(table_name, con=self.connect(), if_exists='replace', index=False)
+from db.sqlite_connection import SqliteConnection
+from db.postgresql_connection import PostgresqlConnection
 
 
 class MainWindow(QMainWindow):
-    def __init__(self, db: AbstractDatabaseConnection):
+    def __init__(self, db):
         super().__init__()
         self.setWindowTitle("Material management system")
         self.setMinimumSize(1280, 960)
@@ -156,16 +91,13 @@ class MainWindow(QMainWindow):
     def table_headers(self):
         headers = "material_id, material_name, category, supplier, unit, unit_cost_usd, usage_process, \
                    storage_condition, purity, hazard_level, country_of_origin, last_updated".split(", ")
-        table_headers = []
-        for item in headers:
-            table_headers.append(item.capitalize().replace("_", " "))
-        return table_headers
+        return [item.capitalize().replace("_", " ") for item in headers]
 
-
-app = QApplication(sys.argv)
-# database = SqliteConnection()
-database = PostgresqlConnection(user='demo', password='test1234')
-main_window = MainWindow(db=database)
-main_window.show()
-main_window.load_data()
-sys.exit(app.exec())
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    # database = SqliteConnection()
+    database = PostgresqlConnection(user='demo', password='test1234')
+    main_window = MainWindow(db=database)
+    main_window.show()
+    main_window.load_data()
+    sys.exit(app.exec())

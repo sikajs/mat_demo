@@ -1,0 +1,10 @@
+from abc import ABC, abstractmethod
+
+class AbstractDatabaseConnection(ABC):
+    @abstractmethod
+    def connect(self):
+        pass
+
+    @abstractmethod
+    def query(self, sql: str):
+        pass
