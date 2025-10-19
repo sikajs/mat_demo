@@ -1,0 +1,401 @@
+﻿material_id,material_name,category,supplier,unit,unit_cost_usd,usage_process,storage_condition,purity,hazard_level,country_of_origin,last_updated
+MAT001,Dicing Tape UV Type,裝配輔材,Dow Chemical,卷,160.67,Oxidation,避光保存,N/A,低,德國,2025-07-24
+MAT002,Photoresist AR-450,光阻材料,長春化工,卷,107.13,Oxidation,密封容器，避光保存,高純度,中,韓國,2025-07-22
+MAT003,BGA Solder Ball Sn96.5Ag3Cu0.5,封裝材料,台灣中油,片,224.77,Packaging,避光保存,99.9999%,低,日本,2025-07-28
+MAT004,8-inch Silicon Wafer,矽材料,Toppan Photomask,公升,51.88,Oxidation,高壓鋼瓶,電子級,中,德國,2025-08-17
+MAT005,Sulfuric Acid (H₂SO₄),化學溶液,長春化工,卷,152.57,CVD,避光保存,電子級,中,台灣,2025-07-31
+MAT006,Argon Gas (Ar),化學氣體,Senju Metal,公克,26.71,Packaging,高壓鋼瓶,高純度,低,法國,2025-07-31
+MAT007,BGA Solder Ball Sn96.5Ag3Cu0.5,封裝材料,欣興電子 Unimicron,公克,191.44,Cleaning,乾燥室，低於25°C,電子級,高,法國,2025-07-14
+MAT008,12-inch Silicon Wafer,矽材料,長春化工,卷,431.06,Etching,乾燥室，低於25°C,高純度,中,日本,2025-09-23
+MAT009,ABF Substrate 4L,封裝基板,Air Liquide,卷,308.85,CMP,常溫乾燥,電子級,低,德國,2025-08-27
+MAT010,Hydrofluoric Acid (HF),化學溶液,欣興電子 Unimicron,公升,17.99,CVD,避光保存,高純度,高,日本,2025-07-27
+MAT011,Gold Wire 25μm,封裝導線,Nan Ya PCB,公升,12.02,Etching,乾燥室，低於25°C,電子級,低,日本,2025-08-21
+MAT012,CF₄ Gas,化學氣體,Air Liquide,公斤,497.45,CMP,乾燥室，低於25°C,N/A,中,德國,2025-07-18
+MAT013,BT Substrate 6L,封裝基板,長春化工,卷,438.75,Etching,高壓鋼瓶,N/A,中,日本,2025-08-26
+MAT014,Ag Wire 18μm,封裝導線,Shin-Etsu,片,263.34,CVD,避光保存,高純度,低,德國,2025-07-31
+MAT015,Copper Target,薄膜材料,Dow Chemical,卷,132.46,Oxidation,乾燥室，低於25°C,高純度,低,法國,2025-07-08
+MAT016,12-inch Silicon Wafer,矽材料,長春化工,公升,458.42,CMP,避光保存,高純度,低,韓國,2025-07-04
+MAT017,Photoresist AR-450,光阻材料,Heraeus,公克,347.05,Lithography,密封容器，避光保存,99.999%,高,日本,2025-09-24
+MAT018,Nitrogen Gas (N₂),化學氣體,GlobalWafers,公升,445.78,Packaging,常溫乾燥,高純度,中,法國,2025-07-18
+MAT019,Ammonium Hydroxide (NH₄OH),化學溶液,Nitto Denko,公升,454.44,CMP,密封容器，避光保存,N/A,高,美國,2025-09-28
+MAT020,Ultra Pure Water,清洗用水,Toppan Photomask,公斤,161.97,Cleaning,密封容器，避光保存,電子級,高,日本,2025-08-30
+MAT021,Photoresist PR-950,光阻材料,JSR Corporation,公升,146.06,CMP,避光保存,高純度,低,德國,2025-09-18
+MAT022,Copper Target,薄膜材料,Dow Chemical,卷,11.31,Lithography,高壓鋼瓶,99.9999%,高,日本,2025-08-10
+MAT023,Argon Gas (Ar),化學氣體,Senju Metal,片,237.17,Packaging,乾燥室，低於25°C,99.999%,高,日本,2025-09-17
+MAT024,Nitrogen Gas (N₂),化學氣體,Dow Chemical,卷,307.9,Packaging,高壓鋼瓶,高純度,高,法國,2025-07-17
+MAT025,Gold Wire 25μm,封裝導線,Toppan Photomask,公克,384.22,Etching,密封容器，避光保存,99.999%,中,美國,2025-07-30
+MAT026,12-inch Silicon Wafer,矽材料,JSR Corporation,公升,70.28,CMP,高壓鋼瓶,99.9999%,低,韓國,2025-07-06
+MAT027,Photoresist AR-450,光阻材料,Shin-Etsu,公升,440.55,Cleaning,避光保存,99.999%,高,美國,2025-08-31
+MAT028,Ultra Pure Water,清洗用水,欣興電子 Unimicron,公克,9.36,CVD,常溫乾燥,99.9999%,低,韓國,2025-08-22
+MAT029,BGA Solder Ball Sn96.5Ag3Cu0.5,封裝材料,Toppan Photomask,公斤,38.41,CMP,乾燥室，低於25°C,高純度,高,日本,2025-09-30
+MAT030,TiN Target,薄膜材料,台灣中油,公升,250.94,Oxidation,避光保存,99.9999%,低,日本,2025-07-22
+MAT031,Dicing Tape UV Type,裝配輔材,Air Liquide,片,168.48,CMP,高壓鋼瓶,N/A,中,日本,2025-09-25
+MAT032,BGA Solder Ball Sn96.5Ag3Cu0.5,封裝材料,Dow Chemical,公克,423.28,Packaging,高壓鋼瓶,高純度,低,韓國,2025-09-28
+MAT033,Photoresist PR-950,光阻材料,Toppan Photomask,片,149.77,Packaging,常溫乾燥,高純度,中,台灣,2025-09-04
+MAT034,Ultra Pure Water,清洗用水,Tanaka Precious Metals,公克,8.05,Etching,常溫乾燥,高純度,低,德國,2025-08-03
+MAT035,Mold Compound,封裝材料,Toppan Photomask,片,190.72,Lithography,高壓鋼瓶,電子級,低,美國,2025-09-28
+MAT036,Sulfuric Acid (H₂SO₄),化學溶液,Heraeus,公克,438.82,Packaging,避光保存,N/A,中,美國,2025-08-26
+MAT037,Photoresist AR-450,光阻材料,台灣中油,片,162.34,Packaging,避光保存,99.9999%,高,日本,2025-09-14
+MAT038,TiN Target,薄膜材料,JSR Corporation,公升,82.06,Cleaning,常溫乾燥,99.999%,高,美國,2025-07-09
+MAT039,Photoresist AR-450,光阻材料,Nan Ya PCB,片,318.8,CVD,避光保存,電子級,中,法國,2025-07-09
+MAT040,Ammonium Hydroxide (NH₄OH),化學溶液,Tanaka Precious Metals,公升,57.17,CVD,乾燥室，低於25°C,N/A,中,日本,2025-08-07
+MAT041,12-inch Silicon Wafer,矽材料,Shin-Etsu,公升,303.07,Packaging,常溫乾燥,99.999%,高,韓國,2025-08-10
+MAT042,UV Release Film,裝配輔材,Heraeus,公克,294.0,Cleaning,避光保存,99.9999%,高,美國,2025-08-10
+MAT043,Cu Wire 20μm,封裝導線,GlobalWafers,卷,383.69,CMP,常溫乾燥,高純度,低,美國,2025-07-11
+MAT044,BGA Solder Ball Sn96.5Ag3Cu0.5,封裝材料,Nan Ya PCB,公升,124.52,CMP,乾燥室，低於25°C,99.9999%,高,德國,2025-08-15
+MAT045,ABF Substrate 4L,封裝基板,欣興電子 Unimicron,公升,102.69,CMP,密封容器，避光保存,99.999%,高,韓國,2025-09-09
+MAT046,12-inch Silicon Wafer,矽材料,Shin-Etsu,卷,219.67,Lithography,常溫乾燥,99.9999%,中,德國,2025-07-05
+MAT047,Ultra Pure Water,清洗用水,Shin-Etsu,公斤,94.98,CMP,密封容器，避光保存,99.999%,低,法國,2025-09-28
+MAT048,Mold Compound,封裝材料,台灣中油,公斤,356.61,Etching,避光保存,99.9999%,中,法國,2025-07-04
+MAT049,UV Release Film,裝配輔材,Nitto Denko,公克,363.68,Etching,高壓鋼瓶,電子級,低,韓國,2025-08-28
+MAT050,Sulfuric Acid (H₂SO₄),化學溶液,Toppan Photomask,卷,449.11,CVD,密封容器，避光保存,99.999%,低,台灣,2025-08-23
+MAT051,Ag Wire 18μm,封裝導線,Shin-Etsu,片,414.98,CMP,避光保存,99.999%,高,法國,2025-07-26
+MAT052,TiN Target,薄膜材料,欣興電子 Unimicron,卷,305.49,Etching,高壓鋼瓶,99.9999%,高,韓國,2025-07-29
+MAT053,Photoresist PR-950,光阻材料,Tanaka Precious Metals,公克,474.54,Etching,密封容器，避光保存,高純度,中,德國,2025-08-01
+MAT054,Ultra Pure Water,清洗用水,Tanaka Precious Metals,公克,17.69,Cleaning,常溫乾燥,99.9999%,高,韓國,2025-07-14
+MAT055,UV Release Film,裝配輔材,長春化工,公斤,5.33,Lithography,常溫乾燥,99.999%,低,台灣,2025-07-30
+MAT056,Gold Wire 25μm,封裝導線,GlobalWafers,公克,390.48,Lithography,常溫乾燥,高純度,低,美國,2025-07-20
+MAT057,8-inch Silicon Wafer,矽材料,欣興電子 Unimicron,卷,449.61,Lithography,避光保存,電子級,低,日本,2025-07-21
+MAT058,Photoresist AR-450,光阻材料,欣興電子 Unimicron,卷,105.58,Packaging,密封容器，避光保存,高純度,中,台灣,2025-07-07
+MAT059,Ag Wire 18μm,封裝導線,TOK,公升,157.92,CMP,乾燥室，低於25°C,電子級,中,德國,2025-09-30
+MAT060,Hydrofluoric Acid (HF),化學溶液,Air Liquide,片,474.05,Etching,密封容器，避光保存,電子級,低,韓國,2025-09-25
+MAT061,Hydrofluoric Acid (HF),化學溶液,Shin-Etsu,公升,99.1,CMP,常溫乾燥,N/A,高,美國,2025-09-05
+MAT062,TiN Target,薄膜材料,Senju Metal,公升,152.72,CMP,高壓鋼瓶,99.9999%,低,法國,2025-09-16
+MAT063,Die Attach Adhesive,封裝材料,長春化工,公克,207.72,Packaging,高壓鋼瓶,99.9999%,高,美國,2025-07-25
+MAT064,BT Substrate 6L,封裝基板,台灣中油,公升,497.77,Oxidation,避光保存,N/A,中,德國,2025-07-12
+MAT065,Mold Compound,封裝材料,Dow Chemical,公升,15.91,Packaging,高壓鋼瓶,99.9999%,低,法國,2025-07-08
+MAT066,ABF Substrate 4L,封裝基板,Nan Ya PCB,公斤,447.39,Oxidation,乾燥室，低於25°C,99.999%,中,日本,2025-09-22
+MAT067,UV Release Film,裝配輔材,GlobalWafers,公升,58.08,Lithography,密封容器，避光保存,99.999%,中,韓國,2025-08-08
+MAT068,Mold Compound,封裝材料,欣興電子 Unimicron,公克,479.59,Packaging,避光保存,N/A,高,美國,2025-07-20
+MAT069,Photoresist PR-950,光阻材料,Dow Chemical,公斤,334.46,Cleaning,密封容器，避光保存,高純度,中,法國,2025-08-29
+MAT070,Photoresist PR-950,光阻材料,GlobalWafers,公克,41.82,Etching,密封容器，避光保存,99.999%,低,法國,2025-08-28
+MAT071,TiN Target,薄膜材料,欣興電子 Unimicron,公升,130.48,Cleaning,高壓鋼瓶,高純度,低,韓國,2025-08-27
+MAT072,Dicing Tape UV Type,裝配輔材,Nan Ya PCB,公升,413.05,Lithography,乾燥室，低於25°C,電子級,低,法國,2025-08-14
+MAT073,CF₄ Gas,化學氣體,Toppan Photomask,卷,271.24,Lithography,避光保存,99.999%,低,法國,2025-08-21
+MAT074,Nitrogen Gas (N₂),化學氣體,Senju Metal,卷,168.57,Packaging,密封容器，避光保存,99.9999%,中,德國,2025-09-07
+MAT075,Si₃N₄ Target,薄膜材料,TOK,片,329.72,Packaging,避光保存,高純度,中,法國,2025-07-17
+MAT076,Dicing Tape UV Type,裝配輔材,Air Liquide,公斤,373.04,CVD,常溫乾燥,電子級,中,日本,2025-09-26
+MAT077,BT Substrate 6L,封裝基板,Heraeus,公升,388.09,CVD,密封容器，避光保存,高純度,低,美國,2025-09-18
+MAT078,Cu Wire 20μm,封裝導線,Tanaka Precious Metals,公斤,126.86,Oxidation,密封容器，避光保存,N/A,低,台灣,2025-09-26
+MAT079,Mold Compound,封裝材料,台灣中油,公克,166.58,Lithography,常溫乾燥,99.999%,低,美國,2025-09-10
+MAT080,Ammonium Hydroxide (NH₄OH),化學溶液,TOK,公斤,225.1,CMP,避光保存,99.999%,低,台灣,2025-08-14
+MAT081,Copper Target,薄膜材料,TOK,公斤,107.62,Lithography,常溫乾燥,N/A,高,美國,2025-09-14
+MAT082,Ultra Pure Water,清洗用水,Nan Ya PCB,卷,306.62,CVD,高壓鋼瓶,N/A,低,台灣,2025-09-07
+MAT083,Dicing Tape UV Type,裝配輔材,Tanaka Precious Metals,公克,260.73,Cleaning,乾燥室，低於25°C,N/A,中,日本,2025-08-10
+MAT084,8-inch Silicon Wafer,矽材料,Dow Chemical,片,228.4,Packaging,高壓鋼瓶,高純度,低,日本,2025-08-07
+MAT085,Die Attach Adhesive,封裝材料,Nan Ya PCB,片,216.71,Etching,常溫乾燥,99.9999%,低,德國,2025-07-21
+MAT086,Ultra Pure Water,清洗用水,GlobalWafers,公升,208.47,CVD,常溫乾燥,N/A,高,法國,2025-07-05
+MAT087,12-inch Silicon Wafer,矽材料,Senju Metal,公克,235.18,CVD,乾燥室，低於25°C,99.9999%,低,德國,2025-09-07
+MAT088,Ag Wire 18μm,封裝導線,Dow Chemical,片,53.23,Oxidation,乾燥室，低於25°C,N/A,高,美國,2025-09-15
+MAT089,Nitrogen Gas (N₂),化學氣體,Toppan Photomask,公斤,230.97,Oxidation,常溫乾燥,99.999%,低,法國,2025-09-19
+MAT090,Gold Wire 25μm,封裝導線,Air Liquide,公斤,373.05,CMP,高壓鋼瓶,電子級,低,德國,2025-09-16
+MAT091,Photoresist PR-950,光阻材料,Heraeus,公克,198.82,CMP,避光保存,99.999%,低,日本,2025-09-06
+MAT092,UV Release Film,裝配輔材,Air Liquide,卷,327.49,CVD,避光保存,99.9999%,高,日本,2025-08-18
+MAT093,Ammonium Hydroxide (NH₄OH),化學溶液,Heraeus,公克,111.56,Lithography,高壓鋼瓶,高純度,低,美國,2025-08-06
+MAT094,Photoresist PR-950,光阻材料,Air Liquide,公升,220.99,CVD,密封容器，避光保存,99.9999%,低,台灣,2025-09-03
+MAT095,Photoresist AR-450,光阻材料,Nitto Denko,片,237.31,Lithography,密封容器，避光保存,N/A,中,美國,2025-07-19
+MAT096,Nitrogen Gas (N₂),化學氣體,Nitto Denko,卷,1.35,Packaging,常溫乾燥,99.9999%,低,韓國,2025-07-21
+MAT097,BGA Solder Ball Sn96.5Ag3Cu0.5,封裝材料,JSR Corporation,片,327.87,Etching,常溫乾燥,99.9999%,高,台灣,2025-09-25
+MAT098,CF₄ Gas,化學氣體,Nan Ya PCB,公升,53.31,Packaging,高壓鋼瓶,電子級,中,日本,2025-09-13
+MAT099,UV Release Film,裝配輔材,Air Liquide,公升,269.65,Etching,乾燥室，低於25°C,99.9999%,低,台灣,2025-09-03
+MAT100,8-inch Silicon Wafer,矽材料,台灣中油,片,42.69,Cleaning,避光保存,N/A,低,德國,2025-07-19
+MAT101,Dicing Tape UV Type,裝配輔材,欣興電子 Unimicron,公克,351.68,Cleaning,乾燥室，低於25°C,高純度,高,德國,2025-08-10
+MAT102,Gold Wire 25μm,封裝導線,Nan Ya PCB,公斤,385.7,Packaging,常溫乾燥,99.9999%,低,韓國,2025-08-19
+MAT103,UV Release Film,裝配輔材,Shin-Etsu,片,261.52,Packaging,常溫乾燥,高純度,低,德國,2025-09-18
+MAT104,TiN Target,薄膜材料,Nan Ya PCB,公斤,366.25,Packaging,乾燥室，低於25°C,N/A,高,台灣,2025-08-16
+MAT105,CF₄ Gas,化學氣體,Toppan Photomask,公克,495.12,Cleaning,常溫乾燥,99.999%,低,台灣,2025-09-20
+MAT106,12-inch Silicon Wafer,矽材料,Toppan Photomask,卷,469.01,CVD,密封容器，避光保存,N/A,中,美國,2025-08-19
+MAT107,Dicing Tape UV Type,裝配輔材,Senju Metal,公斤,483.56,CMP,常溫乾燥,N/A,中,台灣,2025-09-30
+MAT108,Copper Target,薄膜材料,GlobalWafers,公克,224.9,Etching,密封容器，避光保存,99.999%,高,台灣,2025-09-03
+MAT109,ABF Substrate 4L,封裝基板,Tanaka Precious Metals,公克,212.58,Etching,乾燥室，低於25°C,電子級,中,法國,2025-08-26
+MAT110,UV Release Film,裝配輔材,Heraeus,公克,91.83,Packaging,避光保存,99.999%,低,德國,2025-07-28
+MAT111,BT Substrate 6L,封裝基板,Dow Chemical,片,7.55,Etching,高壓鋼瓶,99.9999%,中,法國,2025-09-06
+MAT112,BGA Solder Ball Sn96.5Ag3Cu0.5,封裝材料,Senju Metal,片,268.35,CVD,高壓鋼瓶,電子級,低,法國,2025-07-19
+MAT113,Ultra Pure Water,清洗用水,Shin-Etsu,公升,431.16,Packaging,避光保存,99.999%,低,韓國,2025-08-23
+MAT114,Gold Wire 25μm,封裝導線,Toppan Photomask,公升,106.31,CVD,高壓鋼瓶,電子級,中,美國,2025-07-23
+MAT115,BT Substrate 6L,封裝基板,Nitto Denko,公斤,226.84,CVD,常溫乾燥,99.999%,高,日本,2025-09-29
+MAT116,Sulfuric Acid (H₂SO₄),化學溶液,TOK,卷,404.6,Packaging,乾燥室，低於25°C,99.999%,高,台灣,2025-09-02
+MAT117,Cu Wire 20μm,封裝導線,JSR Corporation,公克,90.29,CVD,乾燥室，低於25°C,電子級,高,美國,2025-09-29
+MAT118,12-inch Silicon Wafer,矽材料,TOK,公克,391.82,Oxidation,避光保存,99.9999%,中,法國,2025-07-03
+MAT119,Mold Compound,封裝材料,Toppan Photomask,公克,298.58,CVD,常溫乾燥,99.999%,中,美國,2025-07-25
+MAT120,Si₃N₄ Target,薄膜材料,長春化工,片,370.41,Packaging,常溫乾燥,N/A,低,德國,2025-08-24
+MAT121,Photoresist AR-450,光阻材料,Tanaka Precious Metals,公斤,32.73,CVD,常溫乾燥,99.9999%,高,法國,2025-09-24
+MAT122,Photoresist AR-450,光阻材料,Nitto Denko,公升,55.24,CMP,高壓鋼瓶,99.999%,低,韓國,2025-07-29
+MAT123,Gold Wire 25μm,封裝導線,Dow Chemical,公升,432.85,Cleaning,避光保存,高純度,低,法國,2025-08-21
+MAT124,Cu Wire 20μm,封裝導線,長春化工,公斤,325.97,Packaging,避光保存,N/A,低,德國,2025-09-13
+MAT125,Ag Wire 18μm,封裝導線,JSR Corporation,卷,263.74,CMP,密封容器，避光保存,99.9999%,中,法國,2025-09-04
+MAT126,BGA Solder Ball Sn96.5Ag3Cu0.5,封裝材料,Heraeus,公升,66.04,Cleaning,密封容器，避光保存,99.999%,低,台灣,2025-08-25
+MAT127,CF₄ Gas,化學氣體,Senju Metal,卷,395.1,Lithography,高壓鋼瓶,99.999%,高,日本,2025-07-31
+MAT128,Die Attach Adhesive,封裝材料,Nan Ya PCB,公斤,428.29,Packaging,乾燥室，低於25°C,99.9999%,高,美國,2025-09-25
+MAT129,Photoresist AR-450,光阻材料,台灣中油,公克,266.15,Packaging,高壓鋼瓶,電子級,高,日本,2025-07-27
+MAT130,Photoresist PR-950,光阻材料,Air Liquide,公升,480.12,Cleaning,避光保存,99.9999%,高,法國,2025-09-16
+MAT131,ABF Substrate 4L,封裝基板,欣興電子 Unimicron,公升,156.16,Oxidation,乾燥室，低於25°C,99.9999%,低,韓國,2025-09-11
+MAT132,Dicing Tape UV Type,裝配輔材,Dow Chemical,公升,360.94,CVD,乾燥室，低於25°C,99.9999%,中,美國,2025-07-22
+MAT133,Copper Target,薄膜材料,Air Liquide,公斤,301.67,Oxidation,避光保存,99.9999%,中,韓國,2025-09-18
+MAT134,UV Release Film,裝配輔材,Toppan Photomask,公升,337.26,CVD,密封容器，避光保存,N/A,低,德國,2025-07-02
+MAT135,Photoresist PR-950,光阻材料,Heraeus,片,380.94,Etching,高壓鋼瓶,99.999%,中,法國,2025-07-11
+MAT136,CF₄ Gas,化學氣體,Shin-Etsu,卷,357.0,Etching,乾燥室，低於25°C,N/A,高,法國,2025-07-29
+MAT137,12-inch Silicon Wafer,矽材料,Nan Ya PCB,公克,307.59,Lithography,高壓鋼瓶,N/A,中,美國,2025-08-17
+MAT138,Hydrofluoric Acid (HF),化學溶液,JSR Corporation,公斤,256.72,Lithography,高壓鋼瓶,99.9999%,高,美國,2025-08-17
+MAT139,Si₃N₄ Target,薄膜材料,Dow Chemical,片,353.35,CVD,常溫乾燥,N/A,高,韓國,2025-09-09
+MAT140,12-inch Silicon Wafer,矽材料,欣興電子 Unimicron,卷,248.15,Lithography,常溫乾燥,高純度,低,德國,2025-07-18
+MAT141,Die Attach Adhesive,封裝材料,Tanaka Precious Metals,公斤,325.35,Lithography,高壓鋼瓶,99.999%,中,日本,2025-09-16
+MAT142,Ammonium Hydroxide (NH₄OH),化學溶液,Dow Chemical,公升,102.81,Packaging,乾燥室，低於25°C,高純度,低,法國,2025-08-29
+MAT143,Si₃N₄ Target,薄膜材料,Shin-Etsu,公斤,499.57,Oxidation,高壓鋼瓶,N/A,中,德國,2025-07-14
+MAT144,Ag Wire 18μm,封裝導線,Heraeus,片,442.08,Oxidation,避光保存,99.9999%,低,台灣,2025-08-16
+MAT145,TiN Target,薄膜材料,Dow Chemical,公斤,381.53,CMP,避光保存,電子級,高,台灣,2025-08-19
+MAT146,Ultra Pure Water,清洗用水,Nan Ya PCB,公斤,463.12,Oxidation,避光保存,電子級,高,法國,2025-08-31
+MAT147,BGA Solder Ball Sn96.5Ag3Cu0.5,封裝材料,Nitto Denko,公斤,137.29,Packaging,常溫乾燥,高純度,低,法國,2025-07-10
+MAT148,Nitrogen Gas (N₂),化學氣體,Toppan Photomask,卷,122.48,CMP,常溫乾燥,99.9999%,高,日本,2025-07-21
+MAT149,UV Release Film,裝配輔材,長春化工,公克,142.46,Etching,避光保存,電子級,中,德國,2025-07-05
+MAT150,BGA Solder Ball Sn96.5Ag3Cu0.5,封裝材料,長春化工,卷,118.57,CMP,常溫乾燥,99.9999%,高,德國,2025-09-08
+MAT151,BT Substrate 6L,封裝基板,台灣中油,公升,97.53,CMP,高壓鋼瓶,N/A,高,法國,2025-07-29
+MAT152,UV Release Film,裝配輔材,Toppan Photomask,卷,27.51,CVD,密封容器，避光保存,高純度,高,美國,2025-08-13
+MAT153,BGA Solder Ball Sn96.5Ag3Cu0.5,封裝材料,欣興電子 Unimicron,公升,16.04,Packaging,密封容器，避光保存,電子級,中,法國,2025-09-01
+MAT154,12-inch Silicon Wafer,矽材料,TOK,公克,477.96,CMP,常溫乾燥,99.999%,中,台灣,2025-08-30
+MAT155,BT Substrate 6L,封裝基板,GlobalWafers,公克,78.0,Oxidation,常溫乾燥,電子級,低,韓國,2025-09-06
+MAT156,Copper Target,薄膜材料,Shin-Etsu,公克,72.02,Etching,乾燥室，低於25°C,高純度,高,台灣,2025-09-03
+MAT157,Ultra Pure Water,清洗用水,JSR Corporation,卷,30.04,CVD,乾燥室，低於25°C,電子級,低,美國,2025-09-24
+MAT158,Ammonium Hydroxide (NH₄OH),化學溶液,Toppan Photomask,卷,171.42,Packaging,避光保存,電子級,中,日本,2025-07-03
+MAT159,Hydrofluoric Acid (HF),化學溶液,Shin-Etsu,公斤,38.27,Etching,常溫乾燥,99.999%,高,台灣,2025-07-02
+MAT160,Ammonium Hydroxide (NH₄OH),化學溶液,GlobalWafers,公斤,441.77,Cleaning,避光保存,高純度,低,韓國,2025-07-09
+MAT161,12-inch Silicon Wafer,矽材料,欣興電子 Unimicron,公克,439.49,Cleaning,避光保存,N/A,低,日本,2025-08-07
+MAT162,Si₃N₄ Target,薄膜材料,TOK,公克,217.52,Oxidation,乾燥室，低於25°C,99.999%,高,法國,2025-09-23
+MAT163,Ultra Pure Water,清洗用水,長春化工,卷,328.1,Packaging,密封容器，避光保存,N/A,高,德國,2025-07-16
+MAT164,Photoresist PR-950,光阻材料,Shin-Etsu,卷,118.59,Oxidation,常溫乾燥,N/A,低,德國,2025-08-22
+MAT165,Ultra Pure Water,清洗用水,Dow Chemical,卷,262.39,CVD,常溫乾燥,99.9999%,高,美國,2025-07-13
+MAT166,Nitrogen Gas (N₂),化學氣體,Tanaka Precious Metals,公斤,485.28,Etching,常溫乾燥,電子級,低,美國,2025-08-22
+MAT167,Copper Target,薄膜材料,Senju Metal,卷,412.94,Etching,密封容器，避光保存,N/A,中,美國,2025-07-24
+MAT168,Cu Wire 20μm,封裝導線,GlobalWafers,公克,410.53,Packaging,常溫乾燥,高純度,高,美國,2025-08-29
+MAT169,Photoresist PR-950,光阻材料,Senju Metal,公克,180.38,CVD,密封容器，避光保存,高純度,中,台灣,2025-08-05
+MAT170,BT Substrate 6L,封裝基板,Dow Chemical,卷,270.48,CVD,避光保存,99.999%,低,台灣,2025-08-10
+MAT171,Dicing Tape UV Type,裝配輔材,Senju Metal,片,275.4,Packaging,密封容器，避光保存,高純度,中,法國,2025-08-14
+MAT172,Si₃N₄ Target,薄膜材料,Heraeus,公升,370.1,Cleaning,常溫乾燥,99.999%,中,台灣,2025-09-02
+MAT173,8-inch Silicon Wafer,矽材料,TOK,片,182.11,CMP,避光保存,高純度,高,韓國,2025-08-14
+MAT174,12-inch Silicon Wafer,矽材料,Shin-Etsu,公克,458.17,Cleaning,避光保存,99.999%,高,韓國,2025-07-25
+MAT175,BT Substrate 6L,封裝基板,Dow Chemical,卷,370.15,Etching,避光保存,N/A,低,日本,2025-08-03
+MAT176,Ultra Pure Water,清洗用水,長春化工,片,323.33,Oxidation,高壓鋼瓶,N/A,中,台灣,2025-07-22
+MAT177,Die Attach Adhesive,封裝材料,Tanaka Precious Metals,公升,169.15,CVD,乾燥室，低於25°C,高純度,高,台灣,2025-09-15
+MAT178,12-inch Silicon Wafer,矽材料,Nitto Denko,公克,279.37,Packaging,常溫乾燥,電子級,低,美國,2025-07-22
+MAT179,CF₄ Gas,化學氣體,台灣中油,公克,74.31,Etching,常溫乾燥,電子級,中,美國,2025-07-18
+MAT180,8-inch Silicon Wafer,矽材料,JSR Corporation,公克,22.5,Oxidation,乾燥室，低於25°C,99.999%,高,法國,2025-07-29
+MAT181,Ultra Pure Water,清洗用水,Tanaka Precious Metals,片,66.2,Etching,密封容器，避光保存,N/A,高,韓國,2025-08-15
+MAT182,Nitrogen Gas (N₂),化學氣體,欣興電子 Unimicron,片,446.24,Etching,避光保存,高純度,高,韓國,2025-08-10
+MAT183,Sulfuric Acid (H₂SO₄),化學溶液,欣興電子 Unimicron,片,320.46,CMP,常溫乾燥,電子級,中,德國,2025-07-31
+MAT184,Ultra Pure Water,清洗用水,Dow Chemical,公斤,213.09,Cleaning,密封容器，避光保存,99.999%,高,美國,2025-09-27
+MAT185,Copper Target,薄膜材料,長春化工,公克,190.95,Oxidation,避光保存,高純度,高,日本,2025-09-24
+MAT186,Dicing Tape UV Type,裝配輔材,Nan Ya PCB,公升,8.51,Etching,避光保存,高純度,中,台灣,2025-08-19
+MAT187,Ultra Pure Water,清洗用水,TOK,片,324.73,Packaging,乾燥室，低於25°C,99.999%,低,美國,2025-08-10
+MAT188,Hydrofluoric Acid (HF),化學溶液,Air Liquide,卷,498.31,Packaging,密封容器，避光保存,N/A,低,法國,2025-07-12
+MAT189,Mold Compound,封裝材料,Nitto Denko,公克,164.75,CMP,常溫乾燥,電子級,高,美國,2025-07-17
+MAT190,Si₃N₄ Target,薄膜材料,JSR Corporation,公升,442.8,CVD,高壓鋼瓶,99.999%,低,台灣,2025-08-08
+MAT191,Ultra Pure Water,清洗用水,Nitto Denko,片,65.14,Cleaning,高壓鋼瓶,電子級,高,日本,2025-07-26
+MAT192,Argon Gas (Ar),化學氣體,Dow Chemical,公升,58.33,CVD,乾燥室，低於25°C,99.999%,低,日本,2025-09-03
+MAT193,Photoresist PR-950,光阻材料,TOK,公斤,313.72,CVD,高壓鋼瓶,99.999%,高,台灣,2025-08-22
+MAT194,TiN Target,薄膜材料,JSR Corporation,片,454.66,Lithography,避光保存,99.999%,高,德國,2025-09-02
+MAT195,Ag Wire 18μm,封裝導線,Nitto Denko,片,26.41,CMP,高壓鋼瓶,99.999%,高,法國,2025-08-10
+MAT196,8-inch Silicon Wafer,矽材料,Shin-Etsu,卷,76.7,Packaging,避光保存,高純度,高,美國,2025-09-18
+MAT197,BT Substrate 6L,封裝基板,長春化工,卷,443.03,Packaging,密封容器，避光保存,99.9999%,中,法國,2025-08-17
+MAT198,Hydrofluoric Acid (HF),化學溶液,JSR Corporation,公克,421.6,Etching,避光保存,N/A,低,法國,2025-09-15
+MAT199,Nitrogen Gas (N₂),化學氣體,Nitto Denko,片,219.87,Packaging,乾燥室，低於25°C,電子級,中,法國,2025-07-14
+MAT200,Die Attach Adhesive,封裝材料,GlobalWafers,卷,48.14,CVD,避光保存,99.999%,中,日本,2025-09-23
+MAT201,TiN Target,薄膜材料,GlobalWafers,公升,70.59,Etching,乾燥室，低於25°C,N/A,高,台灣,2025-09-13
+MAT202,Ultra Pure Water,清洗用水,Tanaka Precious Metals,公克,464.24,CMP,乾燥室，低於25°C,電子級,高,德國,2025-09-12
+MAT203,12-inch Silicon Wafer,矽材料,Dow Chemical,卷,249.34,Lithography,乾燥室，低於25°C,99.9999%,低,日本,2025-07-09
+MAT204,Sulfuric Acid (H₂SO₄),化學溶液,Air Liquide,公升,398.34,Packaging,密封容器，避光保存,高純度,高,美國,2025-07-20
+MAT205,Nitrogen Gas (N₂),化學氣體,Nan Ya PCB,公克,423.28,Packaging,密封容器，避光保存,N/A,中,日本,2025-08-16
+MAT206,Dicing Tape UV Type,裝配輔材,Nitto Denko,卷,308.12,Lithography,密封容器，避光保存,99.999%,低,台灣,2025-09-09
+MAT207,Copper Target,薄膜材料,長春化工,卷,232.32,Lithography,乾燥室，低於25°C,電子級,高,法國,2025-08-15
+MAT208,Sulfuric Acid (H₂SO₄),化學溶液,GlobalWafers,片,442.46,Packaging,乾燥室，低於25°C,99.9999%,中,法國,2025-08-31
+MAT209,Ultra Pure Water,清洗用水,TOK,公斤,123.16,Packaging,乾燥室，低於25°C,99.9999%,中,美國,2025-07-31
+MAT210,Cu Wire 20μm,封裝導線,Dow Chemical,公升,498.1,Packaging,避光保存,N/A,中,日本,2025-07-27
+MAT211,Gold Wire 25μm,封裝導線,JSR Corporation,公克,479.7,Lithography,乾燥室，低於25°C,99.9999%,中,日本,2025-09-11
+MAT212,Ammonium Hydroxide (NH₄OH),化學溶液,Senju Metal,公克,80.45,Packaging,密封容器，避光保存,高純度,高,日本,2025-09-05
+MAT213,ABF Substrate 4L,封裝基板,Dow Chemical,公克,67.64,CMP,乾燥室，低於25°C,99.999%,高,韓國,2025-08-07
+MAT214,Mold Compound,封裝材料,JSR Corporation,卷,483.12,Packaging,密封容器，避光保存,99.9999%,高,台灣,2025-08-25
+MAT215,UV Release Film,裝配輔材,台灣中油,公克,111.09,Lithography,高壓鋼瓶,99.9999%,中,法國,2025-09-04
+MAT216,8-inch Silicon Wafer,矽材料,長春化工,公升,406.97,Cleaning,密封容器，避光保存,99.9999%,高,美國,2025-08-29
+MAT217,Hydrofluoric Acid (HF),化學溶液,GlobalWafers,卷,271.83,CVD,密封容器，避光保存,高純度,高,台灣,2025-07-02
+MAT218,8-inch Silicon Wafer,矽材料,TOK,卷,441.5,CMP,避光保存,99.9999%,高,韓國,2025-09-25
+MAT219,UV Release Film,裝配輔材,Shin-Etsu,卷,79.28,Etching,乾燥室，低於25°C,99.9999%,中,韓國,2025-07-15
+MAT220,Photoresist AR-450,光阻材料,GlobalWafers,公升,65.97,Packaging,避光保存,N/A,中,德國,2025-09-06
+MAT221,BGA Solder Ball Sn96.5Ag3Cu0.5,封裝材料,長春化工,公斤,278.31,Oxidation,乾燥室，低於25°C,99.9999%,低,韓國,2025-07-05
+MAT222,Photoresist AR-450,光阻材料,Shin-Etsu,卷,70.7,CVD,避光保存,N/A,低,美國,2025-08-21
+MAT223,12-inch Silicon Wafer,矽材料,Nitto Denko,卷,40.29,CMP,高壓鋼瓶,99.9999%,低,台灣,2025-07-25
+MAT224,Ultra Pure Water,清洗用水,TOK,公斤,361.55,Etching,密封容器，避光保存,高純度,低,日本,2025-07-12
+MAT225,Dicing Tape UV Type,裝配輔材,Toppan Photomask,卷,181.07,Etching,乾燥室，低於25°C,高純度,高,法國,2025-08-21
+MAT226,Gold Wire 25μm,封裝導線,Senju Metal,卷,115.33,Packaging,高壓鋼瓶,99.9999%,高,美國,2025-08-29
+MAT227,UV Release Film,裝配輔材,Air Liquide,公斤,237.64,Packaging,高壓鋼瓶,99.9999%,低,美國,2025-08-23
+MAT228,Cu Wire 20μm,封裝導線,GlobalWafers,公克,174.27,CMP,常溫乾燥,99.999%,低,台灣,2025-09-20
+MAT229,Ultra Pure Water,清洗用水,Nitto Denko,卷,229.47,Cleaning,常溫乾燥,99.999%,高,日本,2025-07-12
+MAT230,UV Release Film,裝配輔材,Senju Metal,公升,292.34,Packaging,乾燥室，低於25°C,N/A,低,台灣,2025-07-12
+MAT231,ABF Substrate 4L,封裝基板,Dow Chemical,片,326.12,Cleaning,高壓鋼瓶,N/A,低,韓國,2025-08-16
+MAT232,BGA Solder Ball Sn96.5Ag3Cu0.5,封裝材料,欣興電子 Unimicron,公升,395.11,Packaging,密封容器，避光保存,99.9999%,低,美國,2025-07-26
+MAT233,Si₃N₄ Target,薄膜材料,Nan Ya PCB,公斤,88.37,Cleaning,密封容器，避光保存,99.9999%,低,法國,2025-09-01
+MAT234,Ammonium Hydroxide (NH₄OH),化學溶液,Heraeus,卷,371.09,Oxidation,常溫乾燥,99.999%,中,美國,2025-07-13
+MAT235,ABF Substrate 4L,封裝基板,Dow Chemical,公升,126.91,CVD,乾燥室，低於25°C,電子級,低,美國,2025-08-28
+MAT236,BT Substrate 6L,封裝基板,Shin-Etsu,片,435.16,Oxidation,乾燥室，低於25°C,N/A,低,日本,2025-08-23
+MAT237,CF₄ Gas,化學氣體,Dow Chemical,公升,162.45,Packaging,高壓鋼瓶,高純度,高,台灣,2025-09-15
+MAT238,Nitrogen Gas (N₂),化學氣體,Nan Ya PCB,卷,91.05,CMP,常溫乾燥,電子級,高,德國,2025-09-13
+MAT239,BT Substrate 6L,封裝基板,JSR Corporation,公升,25.79,Etching,密封容器，避光保存,高純度,高,美國,2025-09-11
+MAT240,Photoresist PR-950,光阻材料,Heraeus,公升,252.36,CVD,高壓鋼瓶,99.999%,高,德國,2025-08-18
+MAT241,Nitrogen Gas (N₂),化學氣體,台灣中油,卷,128.36,CVD,乾燥室，低於25°C,高純度,低,日本,2025-08-26
+MAT242,Si₃N₄ Target,薄膜材料,Tanaka Precious Metals,公斤,95.87,Cleaning,乾燥室，低於25°C,電子級,低,日本,2025-09-22
+MAT243,UV Release Film,裝配輔材,GlobalWafers,卷,48.61,Oxidation,高壓鋼瓶,99.9999%,高,美國,2025-09-15
+MAT244,Gold Wire 25μm,封裝導線,Air Liquide,片,450.19,Oxidation,乾燥室，低於25°C,99.999%,中,韓國,2025-09-17
+MAT245,ABF Substrate 4L,封裝基板,Toppan Photomask,公克,356.65,CMP,密封容器，避光保存,電子級,中,韓國,2025-07-18
+MAT246,Ammonium Hydroxide (NH₄OH),化學溶液,欣興電子 Unimicron,公升,95.58,Packaging,常溫乾燥,99.9999%,低,台灣,2025-07-25
+MAT247,12-inch Silicon Wafer,矽材料,長春化工,公克,263.97,Packaging,密封容器，避光保存,99.9999%,中,日本,2025-08-31
+MAT248,CF₄ Gas,化學氣體,TOK,卷,394.53,CMP,密封容器，避光保存,電子級,高,台灣,2025-09-30
+MAT249,Nitrogen Gas (N₂),化學氣體,長春化工,公斤,307.25,CMP,密封容器，避光保存,電子級,高,德國,2025-07-20
+MAT250,Gold Wire 25μm,封裝導線,Heraeus,公克,313.3,CMP,乾燥室，低於25°C,99.9999%,中,德國,2025-09-14
+MAT251,Copper Target,薄膜材料,Senju Metal,公升,428.4,CVD,乾燥室，低於25°C,99.999%,中,台灣,2025-08-21
+MAT252,Photoresist PR-950,光阻材料,Air Liquide,公斤,177.11,Etching,高壓鋼瓶,高純度,低,德國,2025-07-02
+MAT253,Dicing Tape UV Type,裝配輔材,Air Liquide,片,358.95,Etching,常溫乾燥,高純度,高,德國,2025-07-23
+MAT254,BT Substrate 6L,封裝基板,Nitto Denko,片,323.68,CVD,高壓鋼瓶,99.9999%,低,法國,2025-07-22
+MAT255,Photoresist PR-950,光阻材料,Nitto Denko,片,174.17,Oxidation,避光保存,N/A,低,日本,2025-07-04
+MAT256,ABF Substrate 4L,封裝基板,Nan Ya PCB,公升,183.87,CVD,高壓鋼瓶,99.9999%,中,日本,2025-07-03
+MAT257,Sulfuric Acid (H₂SO₄),化學溶液,Nitto Denko,卷,482.67,CMP,常溫乾燥,99.9999%,高,法國,2025-07-27
+MAT258,Ammonium Hydroxide (NH₄OH),化學溶液,JSR Corporation,片,447.57,Lithography,乾燥室，低於25°C,高純度,高,台灣,2025-07-25
+MAT259,BGA Solder Ball Sn96.5Ag3Cu0.5,封裝材料,Toppan Photomask,公克,113.83,CMP,高壓鋼瓶,99.9999%,中,日本,2025-09-17
+MAT260,Cu Wire 20μm,封裝導線,Tanaka Precious Metals,公斤,324.78,CMP,乾燥室，低於25°C,電子級,高,美國,2025-08-02
+MAT261,TiN Target,薄膜材料,欣興電子 Unimicron,片,424.77,Packaging,乾燥室，低於25°C,99.999%,中,法國,2025-08-02
+MAT262,12-inch Silicon Wafer,矽材料,TOK,公升,398.78,CVD,乾燥室，低於25°C,99.999%,中,法國,2025-07-07
+MAT263,Photoresist AR-450,光阻材料,台灣中油,公斤,372.82,CMP,高壓鋼瓶,電子級,中,台灣,2025-09-06
+MAT264,Die Attach Adhesive,封裝材料,GlobalWafers,公升,389.9,CMP,乾燥室，低於25°C,99.999%,中,台灣,2025-07-21
+MAT265,Dicing Tape UV Type,裝配輔材,TOK,公克,157.68,CVD,常溫乾燥,99.9999%,高,德國,2025-08-23
+MAT266,Mold Compound,封裝材料,Dow Chemical,片,254.06,Lithography,常溫乾燥,99.9999%,低,法國,2025-09-04
+MAT267,8-inch Silicon Wafer,矽材料,JSR Corporation,片,497.98,Lithography,常溫乾燥,高純度,中,法國,2025-07-03
+MAT268,Copper Target,薄膜材料,JSR Corporation,公斤,92.41,Lithography,密封容器，避光保存,99.9999%,低,德國,2025-07-08
+MAT269,12-inch Silicon Wafer,矽材料,長春化工,卷,3.53,Cleaning,避光保存,99.999%,低,韓國,2025-08-31
+MAT270,Photoresist PR-950,光阻材料,長春化工,公升,402.82,CMP,密封容器，避光保存,電子級,低,法國,2025-08-03
+MAT271,Ultra Pure Water,清洗用水,JSR Corporation,公克,164.25,Oxidation,避光保存,99.999%,中,德國,2025-08-05
+MAT272,ABF Substrate 4L,封裝基板,GlobalWafers,公斤,403.23,CVD,密封容器，避光保存,N/A,低,韓國,2025-09-15
+MAT273,UV Release Film,裝配輔材,Shin-Etsu,公斤,324.98,Oxidation,密封容器，避光保存,N/A,中,美國,2025-07-04
+MAT274,Ag Wire 18μm,封裝導線,GlobalWafers,公斤,308.87,Lithography,避光保存,N/A,中,台灣,2025-08-28
+MAT275,Hydrofluoric Acid (HF),化學溶液,GlobalWafers,公升,465.45,Oxidation,乾燥室，低於25°C,電子級,低,韓國,2025-07-14
+MAT276,Gold Wire 25μm,封裝導線,台灣中油,公斤,147.83,Lithography,避光保存,高純度,低,美國,2025-07-10
+MAT277,UV Release Film,裝配輔材,Tanaka Precious Metals,公克,91.28,Packaging,常溫乾燥,電子級,低,韓國,2025-09-15
+MAT278,12-inch Silicon Wafer,矽材料,長春化工,公斤,33.82,Oxidation,密封容器，避光保存,電子級,中,日本,2025-08-21
+MAT279,Cu Wire 20μm,封裝導線,Shin-Etsu,公斤,209.53,Lithography,乾燥室，低於25°C,99.999%,中,台灣,2025-07-14
+MAT280,ABF Substrate 4L,封裝基板,Shin-Etsu,公升,54.41,CMP,避光保存,電子級,高,法國,2025-08-14
+MAT281,8-inch Silicon Wafer,矽材料,Senju Metal,卷,277.11,CVD,密封容器，避光保存,99.9999%,低,韓國,2025-09-06
+MAT282,Sulfuric Acid (H₂SO₄),化學溶液,Heraeus,公克,23.99,CMP,常溫乾燥,99.9999%,中,德國,2025-07-09
+MAT283,TiN Target,薄膜材料,TOK,卷,407.99,Cleaning,常溫乾燥,99.999%,中,台灣,2025-08-03
+MAT284,UV Release Film,裝配輔材,欣興電子 Unimicron,公斤,463.15,Etching,常溫乾燥,99.999%,低,美國,2025-07-27
+MAT285,Argon Gas (Ar),化學氣體,JSR Corporation,公斤,349.22,CVD,高壓鋼瓶,電子級,低,韓國,2025-08-29
+MAT286,Photoresist PR-950,光阻材料,欣興電子 Unimicron,公升,159.56,CMP,避光保存,N/A,高,美國,2025-07-20
+MAT287,Ultra Pure Water,清洗用水,Toppan Photomask,公斤,305.75,Cleaning,避光保存,N/A,高,日本,2025-08-29
+MAT288,Ultra Pure Water,清洗用水,Toppan Photomask,卷,31.78,Oxidation,密封容器，避光保存,99.999%,中,美國,2025-08-05
+MAT289,8-inch Silicon Wafer,矽材料,Air Liquide,卷,408.0,Cleaning,避光保存,99.999%,低,台灣,2025-09-10
+MAT290,TiN Target,薄膜材料,Dow Chemical,片,121.18,Etching,密封容器，避光保存,N/A,中,台灣,2025-08-05
+MAT291,Si₃N₄ Target,薄膜材料,JSR Corporation,卷,449.87,Cleaning,高壓鋼瓶,電子級,低,韓國,2025-09-27
+MAT292,Photoresist PR-950,光阻材料,Air Liquide,卷,382.83,Cleaning,常溫乾燥,99.999%,低,韓國,2025-08-11
+MAT293,Photoresist AR-450,光阻材料,Nitto Denko,公斤,4.54,Cleaning,高壓鋼瓶,電子級,高,日本,2025-07-10
+MAT294,Gold Wire 25μm,封裝導線,台灣中油,卷,59.26,CMP,避光保存,99.999%,中,韓國,2025-08-06
+MAT295,Hydrofluoric Acid (HF),化學溶液,Nan Ya PCB,卷,350.07,CMP,高壓鋼瓶,99.999%,高,日本,2025-09-21
+MAT296,Argon Gas (Ar),化學氣體,Heraeus,卷,109.7,Lithography,避光保存,電子級,低,日本,2025-09-22
+MAT297,Copper Target,薄膜材料,Heraeus,公克,422.15,Lithography,常溫乾燥,電子級,中,美國,2025-07-12
+MAT298,8-inch Silicon Wafer,矽材料,Air Liquide,公克,82.71,Lithography,乾燥室，低於25°C,電子級,低,日本,2025-09-13
+MAT299,Die Attach Adhesive,封裝材料,Dow Chemical,公斤,424.29,Packaging,常溫乾燥,高純度,中,日本,2025-09-23
+MAT300,Copper Target,薄膜材料,JSR Corporation,公克,37.91,Packaging,乾燥室，低於25°C,99.999%,高,日本,2025-09-23
+MAT301,ABF Substrate 4L,封裝基板,長春化工,公克,68.63,CVD,乾燥室，低於25°C,N/A,高,美國,2025-07-19
+MAT302,8-inch Silicon Wafer,矽材料,TOK,公升,345.51,Cleaning,常溫乾燥,99.9999%,低,美國,2025-08-12
+MAT303,Argon Gas (Ar),化學氣體,Senju Metal,卷,127.73,CMP,乾燥室，低於25°C,高純度,低,美國,2025-07-22
+MAT304,Die Attach Adhesive,封裝材料,Dow Chemical,公斤,329.78,CMP,高壓鋼瓶,高純度,低,美國,2025-09-30
+MAT305,Sulfuric Acid (H₂SO₄),化學溶液,JSR Corporation,公斤,434.77,CMP,密封容器，避光保存,99.999%,中,日本,2025-08-03
+MAT306,Ultra Pure Water,清洗用水,Senju Metal,卷,379.29,Packaging,乾燥室，低於25°C,高純度,低,日本,2025-08-30
+MAT307,Dicing Tape UV Type,裝配輔材,GlobalWafers,片,232.85,Cleaning,避光保存,電子級,低,韓國,2025-07-09
+MAT308,Gold Wire 25μm,封裝導線,Heraeus,公克,241.12,Etching,乾燥室，低於25°C,N/A,高,日本,2025-07-22
+MAT309,12-inch Silicon Wafer,矽材料,Heraeus,卷,139.6,Cleaning,高壓鋼瓶,N/A,高,美國,2025-07-18
+MAT310,Copper Target,薄膜材料,Air Liquide,公斤,403.44,Lithography,常溫乾燥,電子級,中,美國,2025-09-03
+MAT311,Argon Gas (Ar),化學氣體,Air Liquide,公斤,230.08,Etching,避光保存,高純度,高,韓國,2025-09-20
+MAT312,Cu Wire 20μm,封裝導線,Nan Ya PCB,公升,480.08,Oxidation,高壓鋼瓶,99.9999%,低,台灣,2025-08-02
+MAT313,Copper Target,薄膜材料,Tanaka Precious Metals,片,99.13,Etching,常溫乾燥,高純度,低,台灣,2025-09-14
+MAT314,Mold Compound,封裝材料,Senju Metal,公斤,75.3,CMP,避光保存,電子級,中,德國,2025-07-24
+MAT315,UV Release Film,裝配輔材,Heraeus,片,272.89,Packaging,密封容器，避光保存,99.9999%,低,德國,2025-09-06
+MAT316,Photoresist PR-950,光阻材料,台灣中油,卷,44.09,Packaging,高壓鋼瓶,高純度,低,美國,2025-08-09
+MAT317,ABF Substrate 4L,封裝基板,欣興電子 Unimicron,公升,498.06,Lithography,避光保存,N/A,低,台灣,2025-07-23
+MAT318,ABF Substrate 4L,封裝基板,Shin-Etsu,片,228.03,Etching,高壓鋼瓶,99.9999%,中,法國,2025-07-20
+MAT319,Dicing Tape UV Type,裝配輔材,Nan Ya PCB,公克,88.0,Cleaning,常溫乾燥,99.999%,低,日本,2025-08-11
+MAT320,ABF Substrate 4L,封裝基板,JSR Corporation,公升,280.74,CMP,乾燥室，低於25°C,N/A,低,日本,2025-08-19
+MAT321,Copper Target,薄膜材料,Senju Metal,卷,496.58,CMP,常溫乾燥,N/A,高,日本,2025-08-09
+MAT322,8-inch Silicon Wafer,矽材料,Tanaka Precious Metals,卷,315.6,Cleaning,密封容器，避光保存,高純度,高,日本,2025-08-10
+MAT323,Cu Wire 20μm,封裝導線,台灣中油,公斤,457.77,CVD,避光保存,N/A,低,美國,2025-07-08
+MAT324,Ag Wire 18μm,封裝導線,Toppan Photomask,卷,139.32,CMP,高壓鋼瓶,99.999%,低,日本,2025-07-03
+MAT325,Nitrogen Gas (N₂),化學氣體,Heraeus,公斤,438.77,Oxidation,常溫乾燥,99.999%,中,法國,2025-08-22
+MAT326,8-inch Silicon Wafer,矽材料,台灣中油,公斤,332.01,Oxidation,常溫乾燥,99.9999%,中,台灣,2025-07-14
+MAT327,TiN Target,薄膜材料,TOK,公斤,227.92,Lithography,避光保存,電子級,低,德國,2025-08-09
+MAT328,Argon Gas (Ar),化學氣體,Senju Metal,公克,464.56,CVD,密封容器，避光保存,N/A,中,日本,2025-07-17
+MAT329,Nitrogen Gas (N₂),化學氣體,欣興電子 Unimicron,公斤,130.43,CMP,高壓鋼瓶,N/A,高,德國,2025-08-17
+MAT330,ABF Substrate 4L,封裝基板,Air Liquide,公斤,442.24,Cleaning,高壓鋼瓶,99.999%,低,法國,2025-07-20
+MAT331,ABF Substrate 4L,封裝基板,TOK,卷,133.62,Oxidation,乾燥室，低於25°C,99.9999%,中,台灣,2025-08-16
+MAT332,Ultra Pure Water,清洗用水,長春化工,公克,75.39,Lithography,常溫乾燥,99.9999%,高,德國,2025-09-04
+MAT333,UV Release Film,裝配輔材,欣興電子 Unimicron,公升,407.78,CMP,常溫乾燥,高純度,高,韓國,2025-09-22
+MAT334,8-inch Silicon Wafer,矽材料,GlobalWafers,片,470.3,Packaging,高壓鋼瓶,99.999%,中,韓國,2025-07-04
+MAT335,ABF Substrate 4L,封裝基板,Tanaka Precious Metals,片,458.96,CVD,高壓鋼瓶,高純度,中,台灣,2025-08-01
+MAT336,UV Release Film,裝配輔材,Toppan Photomask,片,476.05,Packaging,常溫乾燥,電子級,高,德國,2025-09-09
+MAT337,Dicing Tape UV Type,裝配輔材,Heraeus,公升,358.19,Oxidation,常溫乾燥,電子級,低,德國,2025-07-31
+MAT338,Ultra Pure Water,清洗用水,台灣中油,公克,298.05,Lithography,密封容器，避光保存,高純度,高,日本,2025-08-20
+MAT339,Ultra Pure Water,清洗用水,Shin-Etsu,卷,453.11,Oxidation,避光保存,高純度,高,日本,2025-09-14
+MAT340,8-inch Silicon Wafer,矽材料,JSR Corporation,公斤,378.05,CVD,密封容器，避光保存,電子級,中,日本,2025-09-23
+MAT341,BT Substrate 6L,封裝基板,Toppan Photomask,公升,204.08,Etching,高壓鋼瓶,高純度,低,法國,2025-08-20
+MAT342,BT Substrate 6L,封裝基板,TOK,公克,182.16,Oxidation,避光保存,99.999%,中,德國,2025-07-09
+MAT343,Copper Target,薄膜材料,Air Liquide,公升,129.41,Etching,常溫乾燥,99.9999%,高,韓國,2025-09-04
+MAT344,12-inch Silicon Wafer,矽材料,GlobalWafers,卷,146.53,Etching,乾燥室，低於25°C,高純度,高,德國,2025-09-28
+MAT345,Sulfuric Acid (H₂SO₄),化學溶液,Heraeus,公斤,431.56,Oxidation,密封容器，避光保存,99.9999%,低,韓國,2025-08-09
+MAT346,BT Substrate 6L,封裝基板,Heraeus,片,290.42,Oxidation,常溫乾燥,電子級,中,法國,2025-07-30
+MAT347,Nitrogen Gas (N₂),化學氣體,JSR Corporation,公升,186.6,Oxidation,高壓鋼瓶,高純度,高,台灣,2025-08-23
+MAT348,8-inch Silicon Wafer,矽材料,Air Liquide,公斤,497.09,Packaging,高壓鋼瓶,N/A,高,韓國,2025-09-29
+MAT349,Photoresist AR-450,光阻材料,Shin-Etsu,片,265.18,Oxidation,乾燥室，低於25°C,99.9999%,低,法國,2025-09-22
+MAT350,Sulfuric Acid (H₂SO₄),化學溶液,Dow Chemical,公斤,330.89,Etching,避光保存,99.999%,低,德國,2025-08-17
+MAT351,Ag Wire 18μm,封裝導線,JSR Corporation,公斤,359.85,Oxidation,密封容器，避光保存,電子級,低,法國,2025-09-03
+MAT352,Si₃N₄ Target,薄膜材料,Senju Metal,片,56.2,Lithography,避光保存,99.999%,低,德國,2025-07-18
+MAT353,Photoresist PR-950,光阻材料,JSR Corporation,片,465.68,Cleaning,高壓鋼瓶,高純度,低,德國,2025-07-27
+MAT354,Ammonium Hydroxide (NH₄OH),化學溶液,Toppan Photomask,公克,71.22,Oxidation,避光保存,N/A,低,德國,2025-07-10
+MAT355,12-inch Silicon Wafer,矽材料,欣興電子 Unimicron,公升,173.41,Cleaning,常溫乾燥,99.9999%,低,台灣,2025-08-27
+MAT356,Copper Target,薄膜材料,Tanaka Precious Metals,公克,225.52,Lithography,避光保存,99.9999%,低,日本,2025-09-15
+MAT357,Ultra Pure Water,清洗用水,Nitto Denko,卷,153.5,CVD,避光保存,高純度,低,美國,2025-07-07
+MAT358,Dicing Tape UV Type,裝配輔材,Shin-Etsu,片,495.42,Oxidation,密封容器，避光保存,99.999%,低,台灣,2025-08-26
+MAT359,12-inch Silicon Wafer,矽材料,Nitto Denko,片,10.13,CVD,常溫乾燥,99.9999%,高,美國,2025-07-20
+MAT360,Argon Gas (Ar),化學氣體,Toppan Photomask,公斤,26.97,Packaging,避光保存,99.999%,低,台灣,2025-09-06
+MAT361,BGA Solder Ball Sn96.5Ag3Cu0.5,封裝材料,長春化工,公升,40.54,Oxidation,高壓鋼瓶,N/A,中,美國,2025-09-13
+MAT362,Gold Wire 25μm,封裝導線,Nan Ya PCB,公斤,65.52,CVD,乾燥室，低於25°C,99.9999%,高,法國,2025-08-04
+MAT363,Sulfuric Acid (H₂SO₄),化學溶液,Nitto Denko,片,429.81,Packaging,密封容器，避光保存,高純度,低,法國,2025-07-17
+MAT364,UV Release Film,裝配輔材,Toppan Photomask,卷,480.34,CVD,避光保存,99.9999%,高,德國,2025-08-11
+MAT365,Ammonium Hydroxide (NH₄OH),化學溶液,Nitto Denko,公克,9.2,CMP,密封容器，避光保存,99.9999%,中,美國,2025-09-29
+MAT366,Hydrofluoric Acid (HF),化學溶液,Dow Chemical,公斤,81.7,CVD,高壓鋼瓶,電子級,低,德國,2025-07-07
+MAT367,Ultra Pure Water,清洗用水,TOK,公斤,419.31,Oxidation,密封容器，避光保存,99.9999%,高,日本,2025-09-20
+MAT368,Mold Compound,封裝材料,Heraeus,公斤,412.73,Cleaning,乾燥室，低於25°C,99.9999%,低,法國,2025-09-04
+MAT369,Copper Target,薄膜材料,長春化工,公克,75.12,Cleaning,乾燥室，低於25°C,99.9999%,高,美國,2025-07-23
+MAT370,ABF Substrate 4L,封裝基板,長春化工,公克,15.28,CMP,避光保存,N/A,低,日本,2025-07-17
+MAT371,Dicing Tape UV Type,裝配輔材,Senju Metal,公升,308.18,CVD,常溫乾燥,電子級,低,韓國,2025-07-26
+MAT372,Gold Wire 25μm,封裝導線,長春化工,公克,95.21,Oxidation,高壓鋼瓶,99.999%,低,法國,2025-08-03
+MAT373,Die Attach Adhesive,封裝材料,JSR Corporation,卷,426.36,Oxidation,高壓鋼瓶,99.999%,中,日本,2025-08-05
+MAT374,Dicing Tape UV Type,裝配輔材,Toppan Photomask,公克,247.07,Lithography,避光保存,電子級,中,法國,2025-07-23
+MAT375,Sulfuric Acid (H₂SO₄),化學溶液,JSR Corporation,片,125.39,Etching,密封容器，避光保存,高純度,低,日本,2025-09-04
+MAT376,Photoresist PR-950,光阻材料,Toppan Photomask,公升,90.63,Packaging,常溫乾燥,99.999%,中,德國,2025-07-16
+MAT377,Dicing Tape UV Type,裝配輔材,長春化工,公克,470.15,Cleaning,避光保存,N/A,中,台灣,2025-07-08
+MAT378,Dicing Tape UV Type,裝配輔材,Heraeus,公斤,107.66,CMP,乾燥室，低於25°C,高純度,低,台灣,2025-08-15
+MAT379,Copper Target,薄膜材料,Senju Metal,片,158.92,Etching,高壓鋼瓶,N/A,高,日本,2025-08-25
+MAT380,Photoresist PR-950,光阻材料,GlobalWafers,片,203.76,CMP,常溫乾燥,N/A,低,德國,2025-08-12
+MAT381,Mold Compound,封裝材料,JSR Corporation,卷,421.97,CMP,高壓鋼瓶,N/A,中,日本,2025-08-25
+MAT382,BT Substrate 6L,封裝基板,Nan Ya PCB,公斤,452.72,Lithography,乾燥室，低於25°C,高純度,高,法國,2025-08-13
+MAT383,Ultra Pure Water,清洗用水,欣興電子 Unimicron,公升,44.93,Oxidation,避光保存,N/A,低,法國,2025-08-21
+MAT384,Ultra Pure Water,清洗用水,Toppan Photomask,公克,369.93,Packaging,常溫乾燥,99.999%,高,日本,2025-08-20
+MAT385,Dicing Tape UV Type,裝配輔材,Senju Metal,公斤,122.62,Packaging,密封容器，避光保存,N/A,高,日本,2025-07-20
+MAT386,BGA Solder Ball Sn96.5Ag3Cu0.5,封裝材料,TOK,公斤,475.85,Etching,常溫乾燥,99.999%,低,日本,2025-08-21
+MAT387,Ag Wire 18μm,封裝導線,Air Liquide,片,260.64,Cleaning,避光保存,高純度,低,台灣,2025-07-11
+MAT388,Ultra Pure Water,清洗用水,Dow Chemical,公克,83.65,Lithography,高壓鋼瓶,99.999%,低,台灣,2025-07-06
+MAT389,Sulfuric Acid (H₂SO₄),化學溶液,Tanaka Precious Metals,卷,491.64,CMP,常溫乾燥,電子級,低,德國,2025-07-15
+MAT390,Photoresist PR-950,光阻材料,Heraeus,卷,385.56,Cleaning,常溫乾燥,99.999%,低,台灣,2025-09-24
+MAT391,Die Attach Adhesive,封裝材料,Senju Metal,公克,440.22,Oxidation,乾燥室，低於25°C,99.9999%,低,法國,2025-09-04
+MAT392,ABF Substrate 4L,封裝基板,Nan Ya PCB,公斤,335.66,CVD,常溫乾燥,99.9999%,中,台灣,2025-08-21
+MAT393,Hydrofluoric Acid (HF),化學溶液,Tanaka Precious Metals,卷,193.46,Oxidation,常溫乾燥,99.999%,中,韓國,2025-07-09
+MAT394,Nitrogen Gas (N₂),化學氣體,TOK,公斤,273.28,Etching,密封容器，避光保存,電子級,低,德國,2025-08-03
+MAT395,Sulfuric Acid (H₂SO₄),化學溶液,Shin-Etsu,片,335.68,Lithography,高壓鋼瓶,電子級,中,法國,2025-07-07
+MAT396,Gold Wire 25μm,封裝導線,JSR Corporation,卷,266.83,CMP,常溫乾燥,高純度,高,法國,2025-09-03
+MAT397,CF₄ Gas,化學氣體,長春化工,片,98.48,CMP,密封容器，避光保存,99.999%,中,日本,2025-09-26
+MAT398,Photoresist PR-950,光阻材料,Tanaka Precious Metals,公克,412.66,Oxidation,避光保存,99.9999%,高,韓國,2025-09-17
+MAT399,Mold Compound,封裝材料,欣興電子 Unimicron,公升,251.56,Packaging,常溫乾燥,99.999%,高,日本,2025-08-27
+MAT400,Dicing Tape UV Type,裝配輔材,TOK,公斤,2.66,CMP,常溫乾燥,99.999%,低,韓國,2025-08-06
