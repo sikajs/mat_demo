@@ -17,6 +17,36 @@ class AbstractDatabaseConnection(ABC):
     def query(self, sql: str):
         pass
 
+class PostgresqlConnection(AbstractDatabaseConnection):
+    def __init__(self, user: str, password: str, host="localhost", dbname="demo_development"):
+        from sqlalchemy import create_engine
+        conn_str = "postgresql+psycopg2://{user}:{password}@{host}:5432/{dbname}".format(
+                        user=user, password=password, host=host, dbname=dbname)
+        self.engine = create_engine(conn_str)
+
+    def connect(self):
+        return self.engine.connect()
+
+    def query(self, sql: str):
+        from sqlalchemy import text
+        try:
+            with self.connect() as conn:
+                result = conn.execute(text(sql))
+                if sql.lstrip().lower().startswith("select"):  # process select query
+                    data = result.fetchall()
+                    return data
+                else:  # proceed DML
+                    conn.commit()
+                    return result.rowcount
+        except Exception as e:
+            print(e)
+
+    def init_material(self, csv_file = "semiconductor_materials_400.csv"):
+        table_name = "materials"
+        df = pd.read_csv(csv_file)
+        print(df)
+        df.to_sql(table_name, con=self.engine, if_exists='replace', index=False)
+
 
 class SqliteConnection(AbstractDatabaseConnection):
     def __init__(self, database_file="database.db"):
@@ -32,7 +62,7 @@ class SqliteConnection(AbstractDatabaseConnection):
         try:
             cursor.execute(sql)
             if sql.strip().lower().startswith("select"):  # process select query
-                data = cursor.fetchall()
+                data = cursor.fetchall()  # 不適合大量資料，一次全部進記憶體
                 return data
             else:  # proceed DML
                 conn.commit()
@@ -40,7 +70,7 @@ class SqliteConnection(AbstractDatabaseConnection):
         finally:
             conn.close()
 
-    def init_material(self, csv_file = "semiconductor_materials_200.csv"):
+    def init_material(self, csv_file = "semiconductor_materials_400.csv"):
         table_name = "materials"
         df = pd.read_csv(csv_file)
         print(df)
@@ -53,6 +83,8 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("Material management system")
         self.setMinimumSize(1280, 960)
         self.db = db
+
+        # self.db.init_material()
 
         file_menu_item = self.menuBar().addMenu("&File")
         edit_menu_item = self.menuBar().addMenu("&Edit")
@@ -82,7 +114,7 @@ class MainWindow(QMainWindow):
 
         self.table = QTableWidget()
         self.table.setColumnCount(12)
-        print(self.table_headers)
+        # print(self.table_headers)
         self.table.setHorizontalHeaderLabels(self.table_headers)
         self.setCentralWidget(self.table)
 
@@ -115,9 +147,9 @@ class MainWindow(QMainWindow):
 
     @property
     def material_category_list(self):
-        result = self.db.query("SELECT DISTINCT category FROM materials")
+        result = self.db.query("SELECT DISTINCT TRIM(category) FROM materials")
         print(result)
-        category_list = list(map(lambda x: x[0].strip(), result))
+        category_list = [row[0] for row in result if row[0] is not None]
         return category_list
 
     @property
@@ -131,7 +163,8 @@ class MainWindow(QMainWindow):
 
 
 app = QApplication(sys.argv)
-database = SqliteConnection()
+# database = SqliteConnection()
+database = PostgresqlConnection(user='demo', password='test1234')
 main_window = MainWindow(db=database)
 main_window.show()
 main_window.load_data()
