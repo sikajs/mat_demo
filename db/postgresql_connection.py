@@ -11,10 +11,10 @@ class PostgresqlConnection(AbstractDatabaseConnection):
     def connect(self):
         return self.engine.connect()
 
-    def query(self, sql: str):
+    def query(self, sql: str, params=None):
         try:
             with self.connect() as conn:
-                result = conn.execute(text(sql))
+                result = conn.execute(text(sql), params or {})
                 if sql.lstrip().lower().startswith("select"):  # process select query
                     data = result.fetchall()
                     return data

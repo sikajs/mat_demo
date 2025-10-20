@@ -1,12 +1,13 @@
 import sys
 import pandas as pd
 from PyQt6.QtCore import Qt, QSize
-from PyQt6.QtWidgets import QApplication, QLabel, QMainWindow, QToolBar, QTableWidget, QTableWidgetItem, QComboBox
+from PyQt6.QtWidgets import QApplication, QLabel, QMainWindow, QToolBar, QTableWidget, QTableWidgetItem, QComboBox, \
+    QDialog
 from PyQt6.QtGui import QAction, QIcon, QPixmap
-
 
 from search_dialog import SearchDialog
 from about_dialog import AboutDialog
+from process_analyze_dialog import ProcessAnalyzeDialog
 
 from db.sqlite_connection import SqliteConnection
 from db.postgresql_connection import PostgresqlConnection
@@ -24,6 +25,10 @@ class MainWindow(QMainWindow):
         file_menu_item = self.menuBar().addMenu("&File")
         edit_menu_item = self.menuBar().addMenu("&Edit")
         help_menu_item = self.menuBar().addMenu("&Help")
+
+        analyze_action = QAction("Process analysis", self)
+        analyze_action.triggered.connect(self.usage_process_analyze)
+        file_menu_item.addAction(analyze_action)
 
         search_action = QAction(QIcon("icons/search.png"), "Search", self)
         search_action.triggered.connect(self.search_material)
@@ -80,10 +85,13 @@ class MainWindow(QMainWindow):
         else:
             main_window.load_data()
 
+    def usage_process_analyze(self):
+        dialog = ProcessAnalyzeDialog(self)
+        dialog.exec()
+
     @property
     def material_category_list(self):
         result = self.db.query("SELECT DISTINCT TRIM(category) FROM materials")
-        print(result)
         category_list = [row[0] for row in result if row[0] is not None]
         return category_list
 
@@ -92,6 +100,7 @@ class MainWindow(QMainWindow):
         headers = "material_id, material_name, category, supplier, unit, unit_cost_usd, usage_process, \
                    storage_condition, purity, hazard_level, country_of_origin, last_updated".split(", ")
         return [item.capitalize().replace("_", " ") for item in headers]
+
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
