@@ -58,17 +58,21 @@ class ProcessAnalyzeDialog(QDialog):
             result = self.main_window.db.query(sql)
             self.form_materials_list(result, materials_list)
         self.refresh_table(materials_list)
-        self.calculate_courtry_percentage(materials_list)
+        cost_by_countries = self.calculate_courtry_percentage(materials_list)
+        self.display_percent_table(cost_by_countries)
 
     def calculate_courtry_percentage(self, materials_list):
         df = pd.DataFrame(materials_list, columns=['material_id', 'name', 'unit', 'unit_count', 'item_cost', 'country_of_origin'])
+        cost_by_countries = df.groupby(['country_of_origin'])['item_cost'].sum().reset_index()
+        cost_by_countries['percentage'] = round(cost_by_countries['item_cost'] / cost_by_countries['item_cost'].sum() * 100, 2)
+        return cost_by_countries
+
+    def display_percent_table(self, cost_by_countries):
         self.country_table.setRowCount(0)
-        for country, group in df.groupby('country_of_origin'):
-            percentage = round((group['item_cost'].sum() / self.total_cost * 100), 2)
-            row = self.country_table.rowCount()
-            self.country_table.insertRow(row)
-            self.country_table.setItem(row, 0, QTableWidgetItem(str(country)))
-            self.country_table.setItem(row, 1, QTableWidgetItem(f"{percentage}%"))
+        for row_num, row_data in cost_by_countries.iterrows():
+            self.country_table.insertRow(row_num)
+            self.country_table.setItem(row_num, 0, QTableWidgetItem(row_data['country_of_origin']))
+            self.country_table.setItem(row_num, 1, QTableWidgetItem(f"{row_data['percentage']}%"))
 
     def find_count(self, material_id):
         result = next((item for item in self.selected_materials if item['material_id'] == material_id), None)
