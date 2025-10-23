@@ -1,6 +1,12 @@
 from PyQt6.QtCore import Qt
 from PyQt6.QtWidgets import QDialog, QPushButton, QGridLayout, QLabel, QComboBox, QTableWidget, QTableWidgetItem
 import pandas as pd
+import matplotlib
+from matplotlib.figure import Figure
+from matplotlib.backends.backend_qtagg import FigureCanvasQTAgg as FigureCanvas
+matplotlib.use("QtAgg")
+matplotlib.rcParams['font.family'] = ['Microsoft JhengHei']  # 微軟正黑體
+matplotlib.rcParams['axes.unicode_minus'] = False
 
 from add_material_dialog import AddMaterialDialog
 
@@ -9,7 +15,7 @@ class ProcessAnalyzeDialog(QDialog):
         super().__init__()
         self.setWindowTitle("Usage Process Analysis")
         self.setFixedWidth(800)
-        self.setFixedHeight(600)
+        self.setFixedHeight(1000)
 
         self.main_window = main_window
         self.selected_materials = []
@@ -32,11 +38,17 @@ class ProcessAnalyzeDialog(QDialog):
         self.country_table.setColumnCount(2)
         self.country_table.setHorizontalHeaderLabels(['Country of origin', 'Cost percentage'])
 
+        self.fig = Figure(figsize=(8, 6))
+        self.ax = self.fig.add_subplot(111)
+        self.ax.set_title("Cost Distribution by Country")
+        self.canvas = FigureCanvas(self.fig)
+
         self.layout.addWidget(self.process_combo, 0, 0)
-        self.layout.addWidget(button, 1, 0)
-        self.layout.addWidget(self.table, 2, 0, 1, 2)
-        self.layout.addWidget(self.total_cost_label, 3, 1)
-        self.layout.addWidget(self.country_table, 4, 0)
+        self.layout.addWidget(button, 0, 1)
+        self.layout.addWidget(self.table, 1, 0, 1, 2)
+        self.layout.addWidget(self.total_cost_label, 2, 1)
+        self.layout.addWidget(self.country_table, 3, 0)
+        self.layout.addWidget(self.canvas, 4, 0)
 
         self.setLayout(self.layout)
 
@@ -60,6 +72,15 @@ class ProcessAnalyzeDialog(QDialog):
         self.refresh_table(materials_list)
         cost_by_countries = self.calculate_courtry_percentage(materials_list)
         self.display_percent_table(cost_by_countries)
+        self.display_canvas(cost_by_countries)
+
+    def display_canvas(self, cost_by_countries):
+        self.ax.clear()
+        self.ax.bar(cost_by_countries['country_of_origin'], cost_by_countries['percentage'])
+        self.ax.set_title("Cost Distribution by Country")
+        self.ax.set_xlabel("Country of origin")
+        self.ax.set_ylabel("Percentage")
+        self.canvas.draw()
 
     def calculate_courtry_percentage(self, materials_list):
         df = pd.DataFrame(materials_list, columns=['material_id', 'name', 'unit', 'unit_count', 'item_cost', 'country_of_origin'])
