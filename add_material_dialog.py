@@ -1,4 +1,4 @@
-from PyQt6.QtWidgets import QDialog, QLineEdit, QPushButton, QGridLayout, QLabel, QComboBox
+from PyQt6.QtWidgets import QDialog, QLineEdit, QPushButton, QGridLayout, QLabel, QComboBox, QMessageBox
 from PyQt6.QtCore import pyqtSignal
 
 class AddMaterialDialog(QDialog):
@@ -38,8 +38,16 @@ class AddMaterialDialog(QDialog):
         self.setLayout(layout)
 
     def select(self):
-        self.material_added.emit({'material_id': self.material_id, 'unit_text': self.unit_line_edit.text()})
-        self.accept()
+        try:
+            unit = float(self.unit_line_edit.text())
+            if isinstance(unit, float):
+                self.material_added.emit({'material_id': self.material_id, 'unit_text': self.unit_line_edit.text()})
+                self.accept()
+        except ValueError:
+            error_msg = QMessageBox()
+            error_msg.setWindowTitle("Error")
+            error_msg.setText("Please enter a valid number")
+            error_msg.exec()
 
     def set_unit(self, text):
         if text != '- select materials -':
