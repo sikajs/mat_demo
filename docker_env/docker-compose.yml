@@ -4,13 +4,26 @@ services:
     container_name: postgres17_compose
     restart: always
     environment:
-      POSTGRES_USER: demo
-      POSTGRES_PASSWORD: test1234
+      POSTGRES_USER: demo  # 只供示範
+      POSTGRES_PASSWORD: test1234  # 只供示範
       POSTGRES_DB: demo_development
     ports:
       - "5432:5432"
     volumes:
       - db_data:/var/lib/postgresql/data
-      
+
+  api:
+    build:
+      context: ../app
+      dockerfile: Dockerfile
+    container_name: fastapi_app
+    restart: always
+    environment:
+      DATABASE_URL: postgresql+asyncpg://demo:test1234@db:5432/demo_development
+    depends_on:
+      - db
+    ports:
+      - "8000:80"
+
 volumes:
   db_data:
