@@ -1,9 +1,9 @@
 import sys
-import pandas as pd
 from PyQt6.QtCore import Qt, QSize
 from PyQt6.QtWidgets import QApplication, QLabel, QMainWindow, QToolBar, QTableWidget, QTableWidgetItem, QComboBox, \
     QDialog
 from PyQt6.QtGui import QAction, QIcon, QPixmap
+import requests
 
 from search_dialog import SearchDialog
 from about_dialog import AboutDialog
@@ -66,13 +66,25 @@ class MainWindow(QMainWindow):
         dialog = AboutDialog()
         dialog.exec()
 
-    def load_data(self, sql="SELECT * FROM materials"):
-        result = self.db.query(sql)
+    def load_data(self, category=None):
+        url = "http://localhost:8000/materials"
+        params = {"category": category}
+        response = requests.get(url, params=params)
+        response.raise_for_status()
+        data_list = response.json()
+        self.render_table(data_list)
+
+    def render_table(self, data_list):
+        if not data_list:
+            return
+
+        columns = list(data_list[0].keys())
         self.table.setRowCount(0)
-        for row_number, row_data in enumerate(result):
+        for row_number, row_data in enumerate(data_list):
             self.table.insertRow(row_number)
-            for column_number, data in enumerate(row_data):
-                self.table.setItem(row_number, column_number, QTableWidgetItem(str(data)))
+            for column_number, key in enumerate(columns):
+                value = row_data.get(key, "")
+                self.table.setItem(row_number, column_number, QTableWidgetItem(str(value)))
 
     def search_material(self):
         dialog = SearchDialog(self)
@@ -80,8 +92,7 @@ class MainWindow(QMainWindow):
 
     def on_filter_combo_change(self, text):
         if text != '- Choose category -':
-            sql = "SELECT * FROM materials WHERE category = '" + text + "'"
-            main_window.load_data(sql=sql)
+            main_window.load_data(category=text)
         else:
             main_window.load_data()
 
