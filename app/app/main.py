@@ -21,18 +21,29 @@ def read_root():
 
 @app.get("/materials")
 async def get_materials(
-        category: str | None = Query(default=None, description="過濾材料類別")
+        category: str | None = Query(default=None, description="過濾材料類別"),
+        usage_process: str | None = Query(default=None, description="製程"),
+        limit: int = Query(500, ge=1, le=1000)
 ):
+
+    query = "SELECT * FROM materials WHERE 1=1"
+    params = []
+    param_index = 1
+    if category:
+        query += f" AND category=${param_index}"
+        params.append(category)
+        param_index += 1
+    if usage_process:
+        query += f" AND usage_process=${param_index}"
+        params.append(usage_process)
+        param_index += 1
+
+    query += f" LIMIT ${param_index}"
+    params.append(limit)
+
     try:
         async with app.state.db_pool.acquire() as conn:
-            if category:
-                rows = await conn.fetch(
-                    "SELECT * FROM materials WHERE category = $1",
-                    category
-                )
-            else:
-                rows = await conn.fetch("SELECT * FROM materials")
-
+            rows = await conn.fetch(query, *params)
             return [dict(row) for row in rows]
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
